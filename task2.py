@@ -33,28 +33,28 @@ for i in range(num_pairs):
     roll_no = int(input(f'enter roll no for student  {i +1}: '))
     name = (input(f'enter name for student  {i +1}: '))
     marks = int(input(f'enter marks no for student  {i +1}: '))
-    grade = ''
-    if(90<marks<=100):
-       grade == "A"
+    grade = None
+    if(90 < marks <=100):
+       grade = "A"
     elif(80<marks<=90):
-      grade == "B"
+      grade = "B"
     elif(60<marks<=80):
-      grade == "C"
+      grade = "C"
     elif(40<=marks<=60):
-      grade == "D"
+      grade = "D"
     elif(0<=marks<40):
-      grade == "FAIL"
+      grade = "FAIL"
     else:
       print("Invalid Marks")
-    grades = grade
+
 
     
     
     dynamic_dicts = {
         'roll_no':roll_no,
-        'name':name,
+        'name' : name,
         'marks':marks,
-        'grade':grades,
+        'grade':grade,
     }
     dynamic_dict[key] = dynamic_dicts
 
