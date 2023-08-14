@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 a = input('Enter the numbers or strings: ')
 
 
@@ -14,49 +15,16 @@ lst =[str(i) for i in ls1 if i.isalpha()]
 print(f'Seperated list of the integers: {ls}')
 print(f'Seperated list of the Strings: {lst}')
 
+=======
+a = input("Enter the values :")
+ls1 = a.split(" ")
+print(ls1)
+ls, lst = [], []
+ls = [int(i) for i in ls1 if i.isdigit()]
+lst = [str(i) for i in ls1 if i.isalpha()]
+print(f'Separated list of the integers:{ls}')
+print(f'Separated list of the Strings: {lst}')
+>>>>>>> 18c66ba77d6984aea84ee5a0f0822f57bba1190b
 lst.reverse()
-print(f'String list is reversed : {lst}')
-
-min_val = min(ls)
-print(f'Minimum for the string list is {min_val}')
-
-max_val = max(ls)
-print(f'Minimum for the string list is {max_val}')
-
-
-
-"""l = [1,5,5,6,3,9]
-m = []
-n = []
-for i in a:
-    if type(i) == int:
-      m.append(i)
-    else:
-       n.append(i)
-       
-print(m ,n)"""
-
-"""m.insert(1 ,99)
-print(m)
-n.reverse()
-print(n)
-l.reverse()
-print(l)
-nlst.remove()
-print(nlst)
-print(type(ls))"""
-
-
-
-"""a = ['z', 1, 5, 6, 4, 9, 'b', 'e', 'w', 'z', 'm', 'kunal']
-
-integers = [value for value in a if isinstance(value, int)]
-strings = [value for value in a if isinstance(value, str)]
-
-strings.reverse()  # Using the reverse() function on the 'strings' list
-
-print("Integers:", integers)
-print("Reversed Strings:", strings)
-
-lst.reverse()
-print(lst)"""
+print("String list is reversed ", lst)
+print(f'Maximum and Minimum for the string list is {max(ls)} and {min(ls)}')

@@ -1,30 +1,34 @@
 #list
 
-"""ls =[1 , 2 , 5 , 8 ,'harry' , True , 33,32]
-""""""ls[1] = 9
+ls =[1 , 2 , 5 , 8 ,'harry' , True , 33,32]
+ls.remove('harry')
+print(ls)
+"""""""""ls[1] = 9
 print(ls)""""""
 
 for i in range(7):
     print(ls[i])
-
+"""
 
 
 # list methods
 
-lst = [11,25,6,2,4,5,6]
-print(lst)
+"""lst = [11,25,6,2,4,5,6]
+print(lst)"""
 #lst.append(99)
 #lst.sort(reverse=True)
 #lst.reverse()
 #print(lst.index(6))
+"""lst.pop()
+lst.remove"""
 #print(lst.count(6))
-lst.insert(1,222)
+"""lst.insert(1,222)
 print(lst)"""
-
+"""
 
 #tuple
 
-tup = (1,2,5,6,3,'hello')
+tup = (1, 2, 5, 6, 3, 'hello')
 print(tup[2])
 print(tup)
 
@@ -36,13 +40,13 @@ else:
 
 #methods in tuples
 
-"""tups = ('russia', 'india', 'america', 'china')
+""""""tups = ('russia', 'india', 'america', 'china')
 temp = list(tups)
 temp.append('japan')
 temp.insert(1, 'sri lanka')
 temp[2] = 'canada'
 tups = tuple(temp)
-print(tups)
+print(tups)"""
 """
 
 # dictionary
@@ -59,4 +63,4 @@ tel = {'jack': 4098, 'sape': 4139}
 tel['guido'] = 4127
 del tel['jack']
 tel['kunal'] = 2251
-print(tel)
+print(tel)"""""
