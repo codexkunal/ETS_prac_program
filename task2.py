@@ -35,21 +35,19 @@ for i in range(num_pairs):
     marks = int(input(f'enter marks no for student  {i +1}: '))
     grade = ''
     if(90<marks<=100):
-       grade == "A"
+       grade = "A"
     elif(80<marks<=90):
-      grade == "B"
+      grade = "B"
     elif(60<marks<=80):
-      grade == "C"
+      grade = "C"
     elif(40<=marks<=60):
-      grade == "D"
+      grade = "D"
     elif(0<=marks<40):
-      grade == "FAIL"
+      grade = "FAIL"
     else:
       print("Invalid Marks")
     grades = grade
 
-    
-    
     dynamic_dicts = {
         'roll_no':roll_no,
         'name':name,
@@ -58,6 +56,36 @@ for i in range(num_pairs):
     }
     dynamic_dict[key] = dynamic_dicts
 
+
+
 # Display the dynamically created dictionary
 print("Dynamically created dictionary:")
 print(dynamic_dict)
+"""for student, data in dynamic_dict.items():
+  print(f"{student} : {data}")"""
+
+update = input("Enter yes to update student's marks or enter no: ")
+if update == 'yes':
+  student_to_update = input("Enter thr name of student whose marks you want to edit: ")
+  if student_to_update in dynamic_dicts:
+    new_marks = int(input("Enter marks for updatation: "))
+    dynamic_dicts[marks] = new_marks
+    if(90<marks<=100):
+       grade = "A"
+    elif(80<marks<=90):
+      grade = "B"
+    elif(60<marks<=80):
+      grade = "C"
+    elif(40<=marks<=60):
+      grade = "D"
+    elif(0<=marks<40):
+      grade = "FAIL"
+    else:
+      print("Invalid Marks")
+    grades = grade
+    dynamic_dict[grade] = grade
+  else:
+    print("student not found")
+
+for student, data in dynamic_dict.items():
+  print(f"{student} : {data}")

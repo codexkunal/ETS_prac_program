@@ -1,2 +1,1 @@
-ls[1] = 9
-print(ls)
+input(f"Enter element {j + 1} for list {_ + 1}: ")

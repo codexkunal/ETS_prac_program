@@ -1,10 +1,15 @@
-a = 'z', 1, 5, 6, 4, 9, 'b', 'e', 'w', 'z', 'm', 'kunal'
+a = input('Enter the numbers or strings: ')
+
+
+ls1 = a.split()
+print(ls1)
+
 
 ls = []
 lst = []
 
-ls = [i for i in a  if type(i) == int]
-lst =[i for i in a  if type(i) == str]
+ls = [int(i) for i in ls1 if i.isnumeric()]
+lst =[str(i) for i in ls1 if i.isalpha()]
 
 print(f'Seperated list of the integers: {ls}')
 print(f'Seperated list of the Strings: {lst}')
