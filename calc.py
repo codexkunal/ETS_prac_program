@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 try:
  num1 = int(input("Enter one number :"))
  num2 = int(input("Enter second number:"))
@@ -26,7 +25,7 @@ try:
       print("invalid choice")
 except:
   print("Enter Numeric values only")
-=======
+
 num1 = int(input("Enter number 1: "))
 num2 = int(input("Enter number 2: "))
 
@@ -51,4 +50,4 @@ elif ch == "%":
     print(mod(num1, num2))
 else:
     print("Invalid choice")
->>>>>>> 3b6ce72 (add)
+

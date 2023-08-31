@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 """def calculate(*args):
     if len(args) == 1:
         print("List:", args[0])
@@ -68,7 +68,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-=======
+
 """def calculate(*args):
     if len(args) == 1:
         print("List:", args[0])
@@ -138,4 +138,4 @@ def main():
 
 if __name__ == "__main__":
     main()
->>>>>>> 18c66ba77d6984aea84ee5a0f0822f57bba1190b
+

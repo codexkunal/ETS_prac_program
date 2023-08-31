@@ -33,13 +33,13 @@ for i in range(num_pairs):
     roll_no = int(input(f'enter roll no for student  {i +1}: '))
     name = (input(f'enter name for student  {i +1}: '))
     marks = int(input(f'enter marks no for student  {i +1}: '))
-<<<<<<< HEAD
+
     grade = ''
     if(90<marks<=100):
-=======
-    grade = None
+
+     grade = None
     if(90 < marks <=100):
->>>>>>> 18c66ba77d6984aea84ee5a0f0822f57bba1190b
+
        grade = "A"
     elif(80<marks<=90):
       grade = "B"
